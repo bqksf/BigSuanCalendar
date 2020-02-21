@@ -1,0 +1,34 @@
+<view class="head" style="margin-top:{{statusBarHeight}}px">
+  <text class="headText">算命</text>
+</view>
+<view class="line"></view>
+<view class="flex">
+    <view bindtap="toYanyuan" class="flex1">
+        <image class="img1" src="../../images/meinvguanjia.png"></image>
+        <text class="word1">红娘测烟缘</text>
+        <text class="word-tip">根据生辰八字理论，五行生克冲合刑害等规律详细预测婚姻缘分</text>
+    </view>
+</view>
+<view class="line"></view>
+<view class="flex">
+<view class="flex-ad">
+<ad unit-id="adunit-c31e891e5e43d864" ad-type="video" ad-theme="white"></ad>
+</view>
+</view>
+<view class="line"></view>
+<view class="flex">
+    <view bindtap="toHehun" class="flex1">
+        <image class="img1" src="../../images/qinglvzuo.png"></image>
+        <text class="word1">八字合婚</text>
+        <text class="word-tip">通过命主日元姻缘宫，婚姻宫根基是否稳固，影响男女婚配结果，是姻缘幸福诊断的重要依据</text>
+    </view>
+</view>
+<view class="line"></view>
+<!-- <view class="flex">
+    <view bindtap="toDaSuan" class="flex1">
+        <image class="img1" src="../../images/Garlic.png"></image>
+        <text class="word1">今年运势</text>
+        <text class="word-tip">通过生辰八字测算你流年运势</text>
+    </view>
+</view>
+<view class="line"></view> -->

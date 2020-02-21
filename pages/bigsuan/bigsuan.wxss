@@ -1,0 +1,159 @@
+page {
+    background-color: #fffbed;
+    color: #e00;
+}
+
+.border {
+    margin: 10rpx;
+    border: #f00 5rpx solid;
+}
+
+.param {
+    display: flex;
+    flex-direction: row;
+    padding: 10rpx 60rpx;
+}
+
+.word {
+    color: #777;
+    font-size: 30rpx;
+    flex: 2;
+}
+
+.num {
+    border-radius: 50rpx;
+    font-size: 28rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+}
+
+.title {
+    padding-top: 30rpx;
+    font-weight: 350;
+    text-align: center;
+    font-size: 50rpx;
+}
+
+.date {
+    display: table-cell;
+    flex-direction: row;
+    padding-top: 10rpx;
+    font-weight: 600;
+    width: 680rpx;
+    text-align: center;
+    font-size: 70rpx;
+}
+
+.dateChar {
+    vertical-align: bottom;
+    font-weight: 400;
+    font-size: 58rpx;
+}
+
+.time {
+    flex-direction: row;
+    font-weight: 500;
+    width: 680rpx;
+    text-align: center;
+    font-size: 80rpx;
+}
+
+.countdown {
+    margin-top: 30rpx;
+    display: flex;
+    flex-direction: row;
+    vertical-align: bottom;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 4rpx;
+}
+
+.numberGroup {
+    display: flex;
+    flex-direction: row;
+    color: #999;
+}
+
+.number {
+    border: #aaa 2rpx solid;
+    margin-right: 6rpx;
+    width: 50rpx;
+    height: 70rpx;
+    background-color: #fff;
+    font-size: 40rpx;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gz {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 30rpx;
+}
+
+.red {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #e00;
+    color: #fff;
+    font-size: 35rpx;
+}
+
+.down {
+    display: flex;
+    flex-direction: row;
+}
+
+.side {
+    font-size: 30rpx;
+    padding: 10rpx;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sideTitle {
+    padding: 10rpx;
+    font-size: 40rpx;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sideMiddle {
+    border-left: #f00 5rpx solid;
+    border-right: #f00 5rpx solid;
+}
+
+.smallSide {
+    font-size: 22rpx;
+    padding: 3rpx;
+    font-weight: 300;
+    text-align: center;
+}
+
+.smallTitle {
+    font-size: 30rpx;
+    font-weight: 480;
+    text-align: center;
+}
+
+.smallDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25rpx;
+    padding: 3rpx;
+    font-weight: 300;
+    text-align: center;
+    height: 70rpx;
+}

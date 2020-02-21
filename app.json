@@ -1,13 +1,39 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/suanming/yanyuan/yanyuan",
+    "pages/suanming/yanyuan/result",
+    "pages/suanming/hehun/hehun",
+    "pages/suanming/hehun/result",
+    "pages/bigsuan/bigsuan",
+    "pages/suanming/suanming",
+    "pages/today/today"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#ed4e3b",
+    "navigationBarTitleText": "大算蒜万年历",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "selectedColor": "#000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "大算",
+        "iconPath": "images/Vegetables--3.png",
+        "selectedIconPath": "images/Vegetables-.png"
+      },
+      {
+        "pagePath": "pages/suanming/suanming",
+        "text": "算命",
+        "iconPath": "images/taiji-2.png",
+        "selectedIconPath": "images/taiji.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

@@ -1,0 +1,50 @@
+<view class="weui-article">
+    <text class="weui-article__h2">{{title}}</text>
+    <view class="weui-article__section"></view>
+    <view class="weui-article__section">
+        <view class="weui-article__h1">综合点评</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">{{zonghe}}</view>
+        </view>
+    </view>
+    <view class="weui-article__section">
+        <view class="weui-article__h1">结婚时间</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">{{jiehun_time}}</view>
+        </view>
+    </view>
+    <view class="weui-article__section">
+        <view class="weui-article__h1">桃花运数</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">{{taohua_num}}</view>
+        </view>
+    </view>
+    <view class="flex-ad">
+        <ad unit-id="adunit-3980c069320d62da" ad-type="video" ad-theme="white"></ad>
+    </view>
+    <view class="weui-article__section"></view>
+    <view class="weui-article__section">
+        <view class="weui-article__h1">配偶性格</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">{{peiou_xingge}}</view>
+        </view>
+    </view>
+    <view class="weui-article__section">
+        <view class="weui-article__h1">稳定系数</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">{{wending_xishu}}</view>
+        </view>
+    </view>
+    <view class="weui-article__section">
+        <view class="weui-article__h1">助旺指数</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">{{zhuwang_zhishu}}</view>
+        </view>
+    </view>
+    <view class="weui-article__section">
+        <view class="weui-article__h1">子女运数</view>
+        <view class="weui-article__section">
+            <view class="weui-article__p">{{zinv_yunshu}}</view>
+        </view>
+    </view>
+</view>

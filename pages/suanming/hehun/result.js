@@ -1,21 +1,30 @@
-const AV = require('../../utils/av-weapp-min.js');
 // 在页面中定义插屏广告
 let interstitialAd = null
+const AV = require('../../../utils/av-weapp-min.js');
+function insertStr(soure, start, newStr){   
+  return soure.slice(0, start) + newStr + soure.slice(start);
+}
 Page({
   data: {
-    statusBarHeight: wx.getSystemInfoSync().statusBarHeight,
-    tipText: "此页面内容仅供娱乐使用",
-    modal: "您可以点击下边的联系客服，告诉我们程序改进建议",
-    whatBtn: "改进建议"
+    content: "",
   },
-  onLoad() {
-    AV.Cloud.run('daSuan').then((data) => {
+  onLoad(options) {
+    var paramsJson = options;
+    paramsJson.hour1 == '未知时' && (paramsJson.hour1 = '');
+    paramsJson.hour2 == '未知时' && (paramsJson.hour2 = '');
+    paramsJson.sex = paramsJson.sex == '男' ? 1 : 0;
+    paramsJson.date1 = insertStr(paramsJson.date1,4,'-2');
+    paramsJson.date2 = insertStr(paramsJson.date2,4,'-2');
+    AV.Cloud.run('heHun', paramsJson).then((data) => {
       this.setData({
-        tipText: data.result.tipText,
-        whatBtn: data.result.whatBtn,
-        modal: data.result.modal
+        content: data
       });
     }, function (err) {
+      wx.showModal({
+        title: '提示',
+        showCancel: false,
+        content: '服务器错误，请再尝试一次。' + err,
+      });
     });
     // 在页面onLoad回调事件中创建插屏广告实例
     if (wx.createInterstitialAd) {
@@ -42,11 +51,4 @@ Page({
       url: "../bigsuan/bigsuan"
     });
   },
-  toKnowMore() {
-    wx.showModal({
-      title: "提示",
-      content: this.data.modal,
-      showCancel: false
-    });
-  }
 });

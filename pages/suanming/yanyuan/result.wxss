@@ -1,0 +1,13 @@
+page {
+  background-color: #fffbed;
+}
+.form{
+  margin-top: 100rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.flex-ad{
+  text-align: center;
+  width: 90%;
+  background-color: #fffbed;
+}

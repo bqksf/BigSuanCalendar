@@ -1,0 +1,12 @@
+<view class="weui-article">
+    <view class="weui-article__section">
+        <view class="weui-article__h1">八字合婚</view>
+        <view class="weui-article__section">
+            <text class="weui-article__p">{{content}}</text>
+        </view>
+    </view>
+    <view class="flex-ad">
+        <ad unit-id="adunit-3980c069320d62da" ad-type="video" ad-theme="white"></ad>
+    </view>
+    <view class="weui-article__section"></view>
+</view>

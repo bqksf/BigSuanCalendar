@@ -1,0 +1,71 @@
+<view class="form">
+    <view class="weui-cells__title">请填写信息（公历）</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">你的性别</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker bindchange="bindSexChange" value="{{sexIndex}}" range="{{sex}}">
+                    <view class="weui-select weui-select_in-select-after">{{sex[sexIndex]}}</view>
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">你的生日</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker mode="date" value="{{date}}" start="1970-01-01" end="2030-01-01" bindchange="bindDateChange">
+                        <view class="weui-select weui-select_in-select-after">{{date}}</view>
+                    </picker>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">时间</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker bindchange="bindTimeChange" value="{{timeIndex}}" range="{{time}}">
+                    <view class="weui-select weui-select_in-select-after">{{time[timeIndex]}}</view>
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">配偶生日</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker mode="date" value="{{date2}}" start="1970-01-01" end="2030-01-01" bindchange="bindDate2Change">
+                        <view class="weui-select weui-select_in-select-after">{{date2}}</view>
+                    </picker>
+            </view>
+        </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                <view class="weui-label">时间</view>
+            </view>
+            <view class="weui-cell__bd">
+                <picker bindchange="bindTimeChange" value="{{time2Index}}" range="{{time2}}">
+                    <view class="weui-select weui-select_in-select-after">{{time2[time2Index]}}</view>
+                </picker>
+            </view>
+        </view>
+    </view>
+    <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" bindtap="taoButton">确定</button>
+    </view>
+    <view class="weui-btn-area">
+        <view class="flex-ad">
+            <ad unit-id="adunit-95dfddde0361e68c"></ad>
+        </view>
+    </view>
+</view>

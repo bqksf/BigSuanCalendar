@@ -1,0 +1,120 @@
+<view class="border">
+    <view class="up" style="padding:20rpx;border-bottom: #f00 5rpx solid">
+        <view class="param" wx:for="{{params}}" wx:key="*this">
+            <view class="word">{{item[0]}}</view>
+            <view class="num" style="background-color: #{{item[2]}}">
+                <view style="color:#{{item[2]=='ffffff'?'777':'fff'}}">{{item[1]}}</view>
+            </view>
+        </view>
+        <view class="title">您的最佳开业时间段</view>
+        <view style="display:flex;flex-direction:column">
+            <view class="date">
+        {{date[0]}}
+        <text class="dateChar">年</text> {{date[1]}}
+        <text class="dateChar">月</text> {{date[2]}}
+        <text class="dateChar">日</text>
+            </view>
+            <view class="time">{{time}}</view>
+            <view class="countdown">
+                <view class="foot" style="margin-right: 10rpx;">
+                    <view style="font-size:30rpx">距离最佳时间还有</view>
+                </view>
+                <view class="numberGroup">
+                    <view class="number" wx:if="{{count[0]!='0'}}">
+                        <view>{{count[0]}}</view>
+                    </view>
+                    <view class="number">
+                        <view>{{count[1]}}</view>
+                    </view>
+                    <view class="number">
+                        <view>{{count[2]}}</view>
+                    </view>
+                    <view class="foot">
+                        <view>:</view>
+                    </view>
+                    <view class="number">
+                        <view>{{count[3]}}</view>
+                    </view>
+                    <view class="number">
+                        <view>{{count[4]}}</view>
+                    </view>
+                    <view class="foot">
+                        <view>:</view>
+                    </view>
+                    <view class="number">
+                        <view>{{count[5]}}</view>
+                    </view>
+                    <view class="number">
+                        <view>{{count[6]}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="middle">
+        <view class="gz" style="padding:20rpx">
+            <view style="flex:1">{{lunar.gzYear}}年</view>
+            <view style="flex:1">{{lunar.gzMonth}}月</view>
+            <view style="flex:1">{{lunar.gzDay}}日</view>
+        </view>
+        <view class="red" style="padding:10rpx 20rpx">
+            <view style="flex:1">{{lunar.IDayCn}}日</view>
+            <view style="flex:1"></view>
+            <view style="flex:1">{{lunar.ncWeek}}</view>
+        </view>
+    </view>
+    <view class="down">
+        <view class="side" style="flex:1">
+            <view class="sideTitle">宜</view>
+            <view>嫁娶 订盟</view>
+            <view>祈福 出行</view>
+            <view>开业 祭祀</view>
+        </view>
+        <view class="sideMiddle" style="flex:3">
+            <view class="down">
+                <view class="smallSide" style="flex:1.1">
+                    <view class="smallTitle">吉神</view>
+                    <view class="smallTitle">宜趋</view>
+                    <view>不守塚 鸣吠</view>
+                    <view>对四相 月恩</view>
+                </view>
+                <view style="flex:1.25;border-left:#f00 5rpx solid;border-right:#f00 5rpx solid">
+                    <view class="smallSide">
+                        <view class="smallTitle">今日胎神</view>
+                        <view>厨灶厕房内南</view>
+                    </view>
+                    <view class="smallDown" style="border-top: #f00 5rpx solid;">
+                        <view>
+                            <view class="smallTitle" style="flex:1">正冲
+                <text class="smallSide">冲鸡</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="smallSide" style="flex:1">
+                    <view class="smallTitle">凶神</view>
+                    <view class="smallTitle">宜忌</view>
+                    <view>地火 荒芜</view>
+                    <view>神隔 天火</view>
+                </view>
+            </view>
+            <view class="down" style="border-top:#f00 5rpx solid">
+                <view class="smallDown">
+                    <view style="padding:5rpx">
+                        <view class="smallTitle">时辰吉凶</view>
+                    </view>
+                </view>
+                <view style="display: flex;flex-direction: column">
+                    <view class="smallSide">子丑寅卯辰巳午未申酉戌亥</view>
+                    <view class="smallSide">凶凶吉凶吉吉凶凶吉凶吉吉</view>
+                </view>
+            </view>
+        </view>
+        <view class="side" style="flex:1">
+            <view class="sideTitle">忌</view>
+            <view>　</view>
+            <view>动土 破土</view>
+            <view>　</view>
+        </view>
+    </view>
+</view>
