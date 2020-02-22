@@ -44,13 +44,8 @@
 }
 
 .flex-ad{
-  align-items: center;
-  display: flex;
   width: 90%;
-  flex-direction: column;
   border-radius: 15rpx;
-  justify-content: space-around;
-  background-color: #FFFFFF;
   box-shadow: 0rpx 8rpx 8rpx 0rpx #d9d9d9,0rpx 6px 15px 0rpx #d9d9d9;
 }
 

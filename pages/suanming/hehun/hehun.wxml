@@ -54,7 +54,7 @@
                 <view class="weui-label">时间</view>
             </view>
             <view class="weui-cell__bd">
-                <picker bindchange="bindTimeChange" value="{{time2Index}}" range="{{time2}}">
+                <picker bindchange="bindTime2Change" value="{{time2Index}}" range="{{time2}}">
                     <view class="weui-select weui-select_in-select-after">{{time2[time2Index]}}</view>
                 </picker>
             </view>

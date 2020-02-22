@@ -11,9 +11,9 @@ Page({
   onLoad() {
     AV.Cloud.run('daSuan').then((data) => {
       this.setData({
-        tipText: data.result.tipText,
-        whatBtn: data.result.whatBtn,
-        modal: data.result.modal
+        tipText: data.tipText,
+        whatBtn: data.whatBtn,
+        modal: data.modal
       });
     }, function (err) {
     });
